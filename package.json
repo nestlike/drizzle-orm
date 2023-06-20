@@ -1,0 +1,102 @@
+{
+  "name": "@nestlike/drizzle-orm",
+  "version": "0.0.0",
+  "description": "NestJS module for adding Drizzle ORM to applications",
+  "keywords": [
+    "nestjs",
+    "drizzle",
+    "orm"
+  ],
+  "license": "MIT",
+  "author": "Markus Schmidt <markus.schmidt.84@gmail.com>",
+  "repository": "nestlike/drizzle-orm",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "lint": "eslint \"src/**/*.ts\" --fix"
+  },
+  "peerDependencies": {
+    "@aws-sdk/client-rds-data": "^3.354.0",
+    "@aws-sdk/credential-providers": "^3.354.0",
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "@libsql/client": "^0.2.1",
+    "@neondatabase/serverless": "^0.4.15",
+    "@nestjs/common": "^10.0.1",
+    "@planetscale/database": "^1.7.0",
+    "@types/better-sqlite3": "^7.6.4",
+    "@vercel/postgres": "^0.3.1",
+    "better-sqlite3": "^8.4.0",
+    "drizzle-orm": "~0.26.5",
+    "mysql2": "^3.3.5",
+    "node-postgres": "^0.6.2",
+    "postgres": "^3.3.5"
+  },
+  "peerDependenciesMeta": {
+    "@aws-sdk/client-rds-data": {
+      "optional": true
+    },
+    "@aws-sdk/credential-providers": {
+      "optional": true
+    },
+    "@cloudflare/workers-types": {
+      "optional": true
+    },
+    "@libsql/client": {
+      "optional": false
+    },
+    "@neondatabase/serverless": {
+      "optional": true
+    },
+    "@planetscale/database": {
+      "optional": true
+    },
+    "@types/better-sqlite3": {
+      "optional": false
+    },
+    "@vercel/postgres": {
+      "optional": true
+    },
+    "better-sqlite3": {
+      "optional": true
+    },
+    "mysql2": {
+      "optional": false
+    },
+    "node-postgres": {
+      "optional": true
+    },
+    "postgres": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@aws-sdk/client-rds-data": "^3.354.0",
+    "@aws-sdk/credential-providers": "^3.354.0",
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "@libsql/client": "^0.2.1",
+    "@neondatabase/serverless": "^0.4.15",
+    "@nestjs/common": "^10.0.1",
+    "@planetscale/database": "^1.7.0",
+    "@types/better-sqlite3": "^7.6.4",
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "@vercel/postgres": "^0.3.1",
+    "better-sqlite3": "^8.4.0",
+    "drizzle-orm": "~0.26.5",
+    "eslint": "^8.43.0",
+    "mysql2": "^3.3.5",
+    "node-postgres": "^0.6.2",
+    "postgres": "^3.3.5",
+    "rimraf": "^5.0.1",
+    "semantic-release": "^21.0.5",
+    "typescript": "^5.1.3"
+  }
+}
