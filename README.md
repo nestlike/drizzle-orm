@@ -136,10 +136,8 @@ const schema2 = { users: userEntity, userRelations };
 
 // Next we leverage declaration merging to make sure that Drizzle's type
 // system knows about the feature's entities and their relationships.
-type UsersModuleSchema = typeof schema;
-
 declare module '@nestlike/drizzle-orm' {
-    interface DrizzleSchema extends UsersModuleSchema { }
+    interface DrizzleSchema extends Required<typeof schema> { }
 }
 
 @Module({
@@ -160,10 +158,8 @@ import { PostsService } from './posts.service';
 import { PostsController } from './posts.controller';
 import * as schema from './entities/post.entity';
 
-type PostsModuleSchema = typeof schema;
-
 declare module '@nestlike/drizzle-orm' {
-    interface DrizzleSchema extends PostsModuleSchema { }
+    interface DrizzleSchema extends Required<typeof schema> { }
 }
 
 @Module({
